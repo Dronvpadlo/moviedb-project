@@ -6,9 +6,10 @@ import UserInfo from "@/components/UserInfo/UserInfo";
 const MoviesListCard = () => {
     return (
         <div>
-            todo movie Name
             <PosterPreview/>
             <StarsRating/>
+            todo movie Name
+
         </div>
     );
 };

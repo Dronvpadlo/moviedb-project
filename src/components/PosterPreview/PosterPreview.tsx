@@ -1,6 +1,4 @@
 import React from 'react';
-import Link from "next/link";
-import MovieInfo from "@/components/MovieInfo/MovieInfo";
 
 const PosterPreview = () => {
     return (

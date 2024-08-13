@@ -2,7 +2,9 @@ import React from 'react';
 import Link from "next/link";
 import UserInfo from "@/components/UserInfo/UserInfo";
 
+
 const HeaderComponent = () => {
+
     return (
         <div>
             <Link href={'/'}>Home</Link><br/>
