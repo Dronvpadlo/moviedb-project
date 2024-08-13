@@ -1,6 +1,6 @@
 import {urlBuilder} from "@/consts/urls";
 import {IMovie} from "@/models/IMovies";
-import {IGenre, IGenres} from "@/models/IGenres";
+import {IGenre} from "@/models/IGenres";
 
 
 const movieService = {
