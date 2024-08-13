@@ -1,9 +1,17 @@
 import React from 'react';
+import { movieService } from "@/services/api.service";
+import {IGenre, IGenres} from "@/models/IGenres";
 
-const Page = () => {
+const Page = async () => {
+    const allGenres = await movieService.allGenres();
+
     return (
         <div>
-            todo genres will be here
+            {
+                allGenres.map((genre) => (
+                    <div key={genre.id}>{genre.name}</div>
+                ))
+            }
         </div>
     );
 };

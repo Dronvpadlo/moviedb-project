@@ -1,5 +1,7 @@
 import {urlBuilder} from "@/consts/urls";
 import {IMovie} from "@/models/IMovies";
+import {IGenre, IGenres} from "@/models/IGenres";
+
 
 const movieService = {
     allMovies: async (): Promise<IMovie[]> => {
@@ -16,6 +18,21 @@ const movieService = {
         let movieCard = movies.results
         console.log(movieCard);
         return movieCard;
+    },
+    allGenres: async (): Promise<IGenre[]> => {
+        const token: string = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlM2I3OGFmMzdhZjQxYWE0NGUzODRlZjAxYTg3ZTJhMyIsIm5iZiI6MTcyMzU1MjM5NC4yMjIxMDEsInN1YiI6IjY2Yjc0MmQ0NzEyNTI0Njc4NDU5NjM1ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.O3Bny5zFk77NDWusx4MkBjt9jH_IZssOMkgTbidbRJE';
+        const response = await fetch(urlBuilder.getGenresURl(), {
+            method: "GET",
+            headers: {
+                "Authorization": `Bearer ${token}`,
+                "Content-Type": "application/json"
+            }
+        });
+
+        let genres = await response.json();
+        let genresList = genres.genres
+        console.log(genres)
+        return genresList;
     }
 }
 

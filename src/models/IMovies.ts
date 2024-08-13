@@ -14,7 +14,7 @@ export interface IMovie {
     original_title: string,
     overview: string
     popularity: number,
-    poster_path: number,
+    poster_path: string,
     release_date: string,
     title: string,
     video: boolean | string,
