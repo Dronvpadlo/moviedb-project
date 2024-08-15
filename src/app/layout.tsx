@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import {MyContext} from "@/context/context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,9 +15,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
-      <body>{children}</body>
+
+      <body>
+
+      {children}
+
+      </body>
     </html>
   );
 }
