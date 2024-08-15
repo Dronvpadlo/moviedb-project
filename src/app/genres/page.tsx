@@ -1,16 +1,11 @@
 import React from 'react';
-import { movieService } from "@/services/api.service";
+import GenreBadge from "@/components/GenreBadge/GenreBadge";
 
 const Page = async () => {
-    const allGenres = await movieService.allGenres();
 
     return (
         <div>
-            {
-                allGenres.map((genre) => (
-                    <div key={genre.id}>{genre.name}</div>
-                ))
-            }
+            <GenreBadge/>
         </div>
     );
 };
