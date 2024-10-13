@@ -1,8 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+- Ensure you have installed [NodeJS 18.17 or later](https://nodejs.org/en) and [npm](https://www.npmjs.com/) installer on your local machine. 
+- Install required dependencies by running `npm install react react-dom`.  
+
 
 ```bash
 npm run dev
