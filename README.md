@@ -2,11 +2,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [create-next-
 
 ## Getting Started
 
-- Ensure you have installed [NodeJS 18.17 or later](https://nodejs.org/en) and [npm](https://www.npmjs.com/) installer on your local machine. 
-- Install required dependencies by running `npm install react react-dom`.  
+- Ensure you have installed [NodeJS 18.17](https://nodejs.org/en) or later and [npm](https://www.npmjs.com/) installer on your local machine. 
+- Install required dependencies and run development server 👇👇👇....  
 
 
 ```bash
+npm install react react-dom
 npm run dev
 # or
 yarn dev
