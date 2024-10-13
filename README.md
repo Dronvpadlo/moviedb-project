@@ -7,7 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [create-next-
 
 
 ```bash
-npm install react react-dom
+npm install react react-dom next
 npm run dev
 # or
 yarn dev
